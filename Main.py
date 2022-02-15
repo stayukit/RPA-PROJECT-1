@@ -61,7 +61,14 @@ def Matching(key): # new, page2
 			copy_text = ''
 			status.config(text='None')
 			
-
+def AboutMenu(menu):
+	global copy_text
+	if menu == 'name':
+		copy_text = '|Stayu Kitmonkonpaisan'
+	elif menu == 'email':
+		copy_text = '|stayu.kitm@gmail.com'
+	status.config(text=copy_text[1:])
+	
 def showBox():
 	SaveScreen()
 	status.config(text='')
@@ -83,7 +90,10 @@ root.wm_attributes('-transparentcolor', '#116562') # default#0f0f0f  '#26a69a'
 filemenu = tk.Menu(mainmenu, tearoff=0)
 filemenu.add_command(label='Reset **ต้องเปิดหน้า Slip ก่อนกดปุ่มนี้**', command=showBox) ## ตั้งค่าใหม่ ##
 mainmenu.add_cascade(label='File', menu=filemenu)
-
+filemenu1 = tk.Menu(mainmenu, tearoff=0)
+filemenu1.add_command(label='Developer', command=lambda: AboutMenu('name'))
+filemenu1.add_command(label='Contact Email', command=lambda: AboutMenu('email'))
+mainmenu.add_cascade(label='About', menu=filemenu1)
 #Create Label
 # my_label = Label(root, text="Customer", font=("Helvetica", 20))
 # my_label.pack(pady=20)
