@@ -23,5 +23,6 @@ Problem - งานหน้าร้านปกติ
 
 วิดีโอสอนวิธีใช้: https://youtu.be/9KSal3XjvKg
 
-ดาวโหลดไฟล์โปรแกรม (Zip): 
-* แตกไฟล์แล้วสามารถ run as administrator ไฟล์ RPA.exe 
+ดาวโหลดไฟล์โปรแกรม (Zip): https://drive.google.com/file/d/1d9DkSJ8KFkaVfMh8t0RmqjWPcuDeqiaq/view?usp=sharing
+* แตกไฟล์แล้วสามารถ run as administrator ไฟล์ RPA.exe
+* For Windows only
