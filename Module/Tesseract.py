@@ -48,6 +48,8 @@ def check(data):
 				net = i.split(':')[-1]
 			print(net)
 			# st = format(net, '.2f')			
+			if 'Nettotal' in net:
+				net = net.replace('Nettotal', '')
 			break
 	
 	print('Net:', net, type(net))
